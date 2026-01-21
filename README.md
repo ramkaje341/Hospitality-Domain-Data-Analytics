@@ -114,4 +114,28 @@ The project follows a **Star Schema** for efficient analytics and optimized quer
 ---
 
 ## 📂 Repository Structure
+├── dim_date.csv
+├── dim_hotels.csv
+├── dim_rooms.csv
+├── fact_aggregated_bookings.csv
+├── fact_bookings.csv
+├── meta_data_hospitality.txt
+├── Problem_Statement_and_Tasks.docx
+└── Providing_insights_to_Hospitality_Domain.pbix
+
+---
+
+---
+
+## 🚀 Getting Started
+
+### ✅ Prerequisites
+- Microsoft Power BI Desktop (latest version recommended)
+
+### 🔧 Installation
+
+```bash
+git clone 
+
+
 
