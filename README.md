@@ -113,14 +113,17 @@ The project follows a **Star Schema** for efficient analytics and optimized quer
 
 ## 📂 Files in Repository
 
-├── dim_date.csv # Date dimension table
-├── dim_hotels.csv # Hotels dimension table
-├── dim_rooms.csv # Rooms dimension table
-├── fact_aggregated_bookings.csv # Aggregated bookings data
-├── fact_bookings.csv # Detailed bookings data
-├── meta_data_hospitality.txt # Data dictionary
-├── Problem_Statement_and_Tasks.docx # Project requirements
+```text
+├── dim_date.csv                        # Date dimension table
+├── dim_hotels.csv                      # Hotels dimension table
+├── dim_rooms.csv                       # Rooms dimension table
+├── fact_aggregated_bookings.csv        # Aggregated bookings data
+├── fact_bookings.csv                   # Detailed bookings data
+├── meta_data_hospitality.txt           # Data dictionary
+├── Problem_Statement_and_Tasks.docx    # Project requirements
 └── Providing_insights_to_Hospitality_Domain.pbix # Power BI report file
+```
+
 ## 🚀 Getting Started
 
 ### ✅ Prerequisites
