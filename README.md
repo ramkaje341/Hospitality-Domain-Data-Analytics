@@ -112,9 +112,7 @@ The project follows a **Star Schema** for efficient analytics and optimized quer
 - Property-level and category-level insights  
 
 ---
-
-## 📂 Repository Structure
-
+##📂 **Repository Structure**
 ├── dim_date.csv
 ├── dim_hotels.csv
 ├── dim_rooms.csv
@@ -123,7 +121,7 @@ The project follows a **Star Schema** for efficient analytics and optimized quer
 ├── meta_data_hospitality.txt
 ├── Problem_Statement_and_Tasks.docx
 └── Providing_insights_to_Hospitality_Domain.pbix
----
+
 
 ## 🚀 Getting Started
 
