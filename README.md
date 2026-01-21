@@ -125,8 +125,6 @@ The project follows a **Star Schema** for efficient analytics and optimized quer
 
 ---
 
----
-
 ## 🚀 Getting Started
 
 ### ✅ Prerequisites
@@ -135,7 +133,39 @@ The project follows a **Star Schema** for efficient analytics and optimized quer
 ### 🔧 Installation
 
 ```bash
-git clone 
+git clone https://github.com/ramkaje341/Hospitality-Domain-Data-Analytics.git
+
+---
+▶️ Usage
+
+Open Power BI Desktop
+
+Load Hospitality-Revenue-Analytics.pbix
+
+Explore interactive dashboards and KPIs
+Data Dictionary
+
+Detailed metadata and column descriptions are available in
+meta_data_hospitality.txt
+
+---
+
+👤 Authors
+
+Sriram K
+
+Vaishnav P S
+
+Samarth M
+
+Suhaas D
+---
+📝 License
+
+This project is intended for educational and analytical purposes only.
+
+<p align="center"> <b>Built with Power BI for Hospitality Revenue Analytics</b> </p> ```
+
 
 
 
