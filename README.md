@@ -1,174 +1,92 @@
-🏨 Hospitality Revenue Analytics – Power BI (CodeBasics)
+# Hospitality Revenue Analytics – Power BI (CodeBasics)
 
-A comprehensive Power BI analytics solution built to deliver actionable insights for the Revenue Team in the Hospitality domain.
-This project analyzes booking behavior, revenue performance, and operational efficiency across multiple hotel properties using an optimized star schema data model.
+A comprehensive Power BI analytics solution designed to deliver actionable insights for the Revenue Team in the Hospitality domain. This project analyzes booking patterns, revenue metrics, and operational performance across multiple hotel properties using an optimized star schema data model.
 
-📊 Project Overview
+---
 
-This dashboard enables hospitality businesses to:
+## Project Overview
 
-Track revenue performance
+This dashboard helps hospitality businesses understand revenue performance, booking trends, and operational efficiency through interactive visualizations and key performance indicators (KPIs).
 
-Monitor booking trends
+---
 
-Evaluate occupancy and capacity utilization
+## Dataset Structure
 
-Compare property-wise and category-wise performance
+The project follows a star schema data model for efficient analytics and performance optimization.
 
-Interactive visuals and KPIs help stakeholders make data-driven revenue decisions.
+### Dimension Tables
 
-📁 Dataset Structure
+**dim_date.csv**
+- date: Calendar dates (May, June, July)
+- mmm yy: Month-Year format (e.g., May 25)
+- week no: Week number
+- day_type: Weekday or Weekend
 
-The project follows a star schema for efficient analytics and performance optimization.
+**dim_hotels.csv**
+- property_id: Unique hotel identifier
+- property_name: Hotel name
+- category: Luxury or Business
+- city: Hotel location
 
-⭐ Dimension Tables
-dim_date.csv
+**dim_rooms.csv**
+- room_id: Room type (RT1, RT2, RT3, RT4)
+- room_class: Standard, Elite, Premium, Presidential
 
-date – Calendar dates (May, June, July)
+### Fact Tables
 
-mmm yy – Month-Year format (e.g., May 25)
+**fact_aggregated_bookings.csv**
+- property_id: Hotel identifier
+- check_in_date: Customer check-in date
+- room_category: Room type
+- successful_bookings: Number of successful bookings
+- capacity: Maximum available rooms
 
-week no – Week number
+**fact_bookings.csv**
+- booking_id: Unique booking identifier
+- property_id: Hotel identifier
+- booking_date: Booking creation date
+- check_in_date: Check-in date
+- check_out_date: Check-out date
+- no_guests: Number of guests
+- room_category: Room type
+- booking_platform: Booking channel
+- ratings_given: Customer rating
+- booking_status: Cancelled, Checked Out, No Show
+- revenue_generated: Total booking revenue
+- revenue_realized: Actual revenue after cancellations (40% deduction)
 
-day_type – Weekday / Weekend
+---
 
-dim_hotels.csv
+## Key Features
 
-property_id – Unique hotel identifier
+- Revenue generated vs. revenue realized analysis
+- Booking performance tracking (success, cancellation, no-shows)
+- Occupancy and capacity utilization metrics
+- Time-based trend analysis (day, week, month)
+- Property-wise and category-wise performance comparison
+- Customer ratings and booking platform insights
 
-property_name – Hotel name
+---
 
-category – Luxury / Business
+## Tools & Technologies
 
-city – Hotel location
+- Microsoft Power BI
+- CSV-based historical booking datasets
+- Star schema data modeling
 
-dim_rooms.csv
+---
 
-room_id – Room type (RT1, RT2, RT3, RT4)
+## Analytics Capabilities
 
-room_class – Standard, Elite, Premium, Presidential
+- Revenue trend analysis
+- Occupancy rate calculations
+- Booking platform performance comparison
+- Customer satisfaction metrics
+- Cancellation rate analysis
+- Weekend vs. weekday performance
+- Property-level and category-level insights
 
-📌 Fact Tables
-fact_aggregated_bookings.csv
+---
 
-property_id
+## Repository Structure
 
-check_in_date
-
-room_category
-
-successful_bookings
-
-capacity
-
-fact_bookings.csv
-
-booking_id
-
-property_id
-
-booking_date
-
-check_in_date
-
-check_out_date
-
-no_guests
-
-room_category
-
-booking_platform
-
-ratings_given
-
-booking_status (Cancelled, Checked Out, No Show)
-
-revenue_generated
-
-revenue_realized
-(Cancelled bookings incur a 40% revenue deduction)
-
-🎯 Key Features
-
-Revenue Analysis – Generated vs. realized revenue tracking
-
-Booking Performance – Success, cancellation, and no-show insights
-
-Occupancy Metrics – Capacity utilization across properties
-
-Temporal Trends – Day, week, and month-based analysis
-
-Property Comparison – Performance by hotel, city, and category
-
-Customer Insights – Ratings analysis and booking platform effectiveness
-
-🛠️ Tools & Technologies
-
-Microsoft Power BI – Dashboard development & visualization
-
-Data Sources – CSV-based historical booking data
-
-Data Modeling – Star schema for optimized querying
-
-📈 Analytics Capabilities
-
-Revenue trends over time
-
-Occupancy and utilization rate calculations
-
-Booking platform performance comparison
-
-Customer satisfaction analysis
-
-Cancellation and no-show rate analysis
-
-Weekend vs. weekday performance
-
-Property-wise and category-wise breakdowns
-
-📂 Repository Structure
-├── dim_date.csv                      # Date dimension
-├── dim_hotels.csv                   # Hotels dimension
-├── dim_rooms.csv                    # Rooms dimension
-├── fact_aggregated_bookings.csv     # Aggregated booking data
-├── fact_bookings.csv                # Detailed booking records
-├── meta_data_hospitality.txt        # Data dictionary
-├── Problem_Statement_and_Tasks.docx # Project requirements
-└── Hospitality-Revenue-Analytics.pbix # Power BI dashboard
-
-🚀 Getting Started
-Prerequisites
-
-Microsoft Power BI Desktop (latest version recommended)
-
-Installation
-git clone https://github.com/suhaasd/Hospitality-Revenue-Analytics-PowerBI.git
-
-Open the Dashboard
-
-Launch Power BI Desktop
-
-Open Hospitality-Revenue-Analytics.pbix
-
-Explore interactive visuals and insights
-
-📊 Data Dictionary
-
-Detailed column descriptions and metadata are available in
-meta_data_hospitality.txt
-
-👤 Authors
-
-Sriram K
-
-Vaishnav P S
-
-Samarth M
-
-Suhaas D
-
-📝 License
-
-This project is intended for educational and analytical purposes.
-
-Built with Power BI to drive data-driven decisions in Hospitality Revenue Analytics 📊🏨
