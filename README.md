@@ -1,92 +1,117 @@
-# Hospitality Revenue Analytics – Power BI (CodeBasics)
+# 🏨 Hospitality Revenue Analytics – Power BI (CodeBasics)
 
-A comprehensive Power BI analytics solution designed to deliver actionable insights for the Revenue Team in the Hospitality domain. This project analyzes booking patterns, revenue metrics, and operational performance across multiple hotel properties using an optimized star schema data model.
+<p align="center">
+  <img src="https://img.shields.io/badge/Tool-Power%20BI-yellow" />
+  <img src="https://img.shields.io/badge/Domain-Hospitality-blue" />
+  <img src="https://img.shields.io/badge/Data%20Model-Star%20Schema-green" />
+  <img src="https://img.shields.io/badge/Status-Completed-success" />
+</p>
+
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" width="120"/>
+</p>
+
+A comprehensive **Power BI analytics solution** designed to deliver actionable insights for the **Revenue Team in the Hospitality domain**.  
+This project analyzes **booking patterns, revenue metrics, and operational performance** across multiple hotel properties using an optimized **star schema data model**.
 
 ---
 
-## Project Overview
+## 📊 Project Overview
 
-This dashboard helps hospitality businesses understand revenue performance, booking trends, and operational efficiency through interactive visualizations and key performance indicators (KPIs).
+This dashboard helps hospitality businesses:
+- Understand **revenue performance**
+- Track **booking trends**
+- Measure **occupancy and capacity utilization**
+- Compare **hotel-wise and category-wise performance**
+
+Interactive visuals and KPIs enable **data-driven revenue decisions**.
 
 ---
 
-## Dataset Structure
+## 📁 Dataset Structure
 
-The project follows a star schema data model for efficient analytics and performance optimization.
+The project follows a **Star Schema** for efficient analytics and optimized query performance.
 
-### Dimension Tables
+### ⭐ Dimension Tables
 
 **dim_date.csv**
-- date: Calendar dates (May, June, July)
-- mmm yy: Month-Year format (e.g., May 25)
-- week no: Week number
-- day_type: Weekday or Weekend
+- `date` – Calendar dates (May, June, July)
+- `mmm yy` – Month-Year format (e.g., May 25)
+- `week no` – Week number
+- `day_type` – Weekday / Weekend
 
 **dim_hotels.csv**
-- property_id: Unique hotel identifier
-- property_name: Hotel name
-- category: Luxury or Business
-- city: Hotel location
+- `property_id` – Unique hotel identifier
+- `property_name` – Hotel name
+- `category` – Luxury / Business
+- `city` – Hotel location
 
 **dim_rooms.csv**
-- room_id: Room type (RT1, RT2, RT3, RT4)
-- room_class: Standard, Elite, Premium, Presidential
+- `room_id` – Room type (RT1, RT2, RT3, RT4)
+- `room_class` – Standard, Elite, Premium, Presidential
 
-### Fact Tables
+---
+
+### 📌 Fact Tables
 
 **fact_aggregated_bookings.csv**
-- property_id: Hotel identifier
-- check_in_date: Customer check-in date
-- room_category: Room type
-- successful_bookings: Number of successful bookings
-- capacity: Maximum available rooms
+- `property_id`
+- `check_in_date`
+- `room_category`
+- `successful_bookings`
+- `capacity`
 
 **fact_bookings.csv**
-- booking_id: Unique booking identifier
-- property_id: Hotel identifier
-- booking_date: Booking creation date
-- check_in_date: Check-in date
-- check_out_date: Check-out date
-- no_guests: Number of guests
-- room_category: Room type
-- booking_platform: Booking channel
-- ratings_given: Customer rating
-- booking_status: Cancelled, Checked Out, No Show
-- revenue_generated: Total booking revenue
-- revenue_realized: Actual revenue after cancellations (40% deduction)
+- `booking_id`
+- `property_id`
+- `booking_date`
+- `check_in_date`
+- `check_out_date`
+- `no_guests`
+- `room_category`
+- `booking_platform`
+- `ratings_given`
+- `booking_status` (Cancelled, Checked Out, No Show)
+- `revenue_generated`
+- `revenue_realized` *(40% deduction for cancelled bookings)*
 
 ---
 
-## Key Features
+## 🎯 Key Features
 
-- Revenue generated vs. revenue realized analysis
-- Booking performance tracking (success, cancellation, no-shows)
-- Occupancy and capacity utilization metrics
-- Time-based trend analysis (day, week, month)
-- Property-wise and category-wise performance comparison
-- Customer ratings and booking platform insights
-
----
-
-## Tools & Technologies
-
-- Microsoft Power BI
-- CSV-based historical booking datasets
-- Star schema data modeling
+- 📈 Revenue generated vs. revenue realized analysis  
+- 📉 Booking performance tracking (success, cancellations, no-shows)  
+- 🏨 Occupancy and capacity utilization metrics  
+- 🗓️ Temporal trends (day, week, month)  
+- 🏢 Property-wise and category-wise comparisons  
+- ⭐ Customer ratings and booking platform insights  
 
 ---
 
-## Analytics Capabilities
+## 🛠️ Tools & Technologies
 
-- Revenue trend analysis
-- Occupancy rate calculations
-- Booking platform performance comparison
-- Customer satisfaction metrics
-- Cancellation rate analysis
-- Weekend vs. weekday performance
-- Property-level and category-level insights
+<p align="left">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" width="60"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/CSV_Icon.svg" width="60"/>
+</p>
+
+- **Microsoft Power BI** – Data modeling & visualization  
+- **CSV Datasets** – Historical booking data  
+- **Star Schema** – Optimized analytics design  
 
 ---
 
-## Repository Structure
+## 📈 Analytics Capabilities
+
+- Revenue trend analysis  
+- Occupancy rate calculations  
+- Booking platform performance comparison  
+- Customer satisfaction analysis  
+- Cancellation and no-show rate analysis  
+- Weekend vs. weekday performance  
+- Property-level and category-level insights  
+
+---
+
+## 📂 Repository Structure
 
