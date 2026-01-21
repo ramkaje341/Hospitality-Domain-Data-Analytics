@@ -1,4 +1,4 @@
-# 🏨 Hospitality Revenue Analytics – Power BI (CodeBasics)
+# 🏨 Providing Insights to Revenue Team of Hospitality Domain  – Power BI (CodeBasics)
 
 <p align="center">
   <img src="https://img.shields.io/badge/Tool-Power%20BI-yellow" />
