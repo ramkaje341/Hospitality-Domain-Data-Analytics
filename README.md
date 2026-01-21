@@ -114,6 +114,7 @@ The project follows a **Star Schema** for efficient analytics and optimized quer
 ---
 
 ## 📂 Repository Structure
+
 ├── dim_date.csv
 ├── dim_hotels.csv
 ├── dim_rooms.csv
